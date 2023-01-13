@@ -12,6 +12,10 @@ public class AnimalsCage {
     @Autowired
     private Timer timer;
 
+    @Autowired
+    @Qualifier("dog")
+    private Animal animal;
+
     public void whatAnimalSay() {
         System.out.println("Say:");
         System.out.println(timer.toString());
